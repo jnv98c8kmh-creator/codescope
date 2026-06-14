@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HTML・CSS・JavaScript初心者向けの全61講座。コードを編集し、結果をライブプレビューで確認できます。">
+  <title>HTML・CSS・JavaScript初心者向け全61講座｜CodeScope</title>
+  <meta name="robots" content="index,follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="learn.css?v=4">
+</head>
+<body>
+  <header class="app-header">
+    <a class="brand" href="index.html"><span>&lt;/&gt;</span> CodeScope</a>
+    <div class="header-progress">
+      <span id="progress-text">0 / 61 完了</span>
+      <div class="progress-track"><i id="progress-bar"></i></div>
+    </div>
+    <button class="mobile-menu" id="mobile-menu" type="button" aria-label="講座一覧を開く">講座一覧</button>
+  </header>
+
+  <div class="app-layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-head">
+        <strong>CURRICULUM</strong>
+        <button id="close-menu" type="button" aria-label="閉じる">×</button>
+      </div>
+      <label class="search">
+        <span>⌕</span>
+        <input id="lesson-search" type="search" placeholder="講座や用語を検索">
+      </label>
+      <div class="language-filter" aria-label="言語で絞り込み">
+        <button class="active" data-filter="all" type="button">すべて</button>
+        <button data-filter="html" type="button">HTML</button>
+        <button data-filter="css" type="button">CSS</button>
+        <button data-filter="js" type="button">JS</button>
+      </div>
+      <nav class="lesson-list" id="lesson-list" aria-label="講座一覧"></nav>
+      <div class="sidebar-footer">
+        <a href="index.html">← トップページへ</a>
+        <button id="reset-progress" type="button">進捗をリセット</button>
+      </div>
+    </aside>
+
+    <main class="lesson-main">
+      <section class="lesson-intro">
+        <div class="lesson-meta">
+          <span id="lesson-number">LESSON 01</span>
+          <span id="lesson-language">HTML</span>
+          <span id="lesson-level">入門</span>
+        </div>
+        <h1 id="lesson-title">HTML文書の基本構造</h1>
+        <p id="lesson-summary"></p>
+        <div class="lesson-nav">
+          <button id="previous-lesson" type="button">← 前へ</button>
+          <button id="complete-lesson" type="button">✓ 完了にする</button>
+          <button id="next-lesson" type="button">次へ →</button>
+          <a id="article-link" href="lessons/html-document.html">文章で詳しく読む ↗</a>
+        </div>
+      </section>
+
+      <section class="workbench">
+        <div class="editor-panel">
+          <div class="panel-title">
+            <span><i></i><i></i><i></i></span>
+            <b id="editor-file">index.html</b>
+            <div class="editor-actions">
+              <button id="full-explanation" type="button">完全解説</button>
+              <button id="reset-code" type="button">元に戻す</button>
+            </div>
+          </div>
+          <div class="editor-wrap">
+            <pre id="line-numbers" aria-hidden="true"></pre>
+            <div class="code-input">
+              <pre id="code-highlight" aria-hidden="true"></pre>
+              <textarea id="code-editor" spellcheck="false" aria-label="編集できるサンプルコード"></textarea>
+            </div>
+          </div>
+          <div class="try-hint"><b>TRY IT</b><span id="try-text">コード内の文字や数値を変えてみましょう。</span></div>
+        </div>
+
+        <div class="preview-panel">
+          <div class="panel-title">
+            <span class="live-dot">● LIVE PREVIEW</span>
+            <div class="viewport-buttons">
+              <button class="active" data-width="100%" type="button">PC</button>
+              <button data-width="390px" type="button">MOBILE</button>
+            </div>
+          </div>
+          <div class="preview-stage">
+            <iframe id="preview" title="コードの実行結果" sandbox="allow-scripts"></iframe>
+          </div>
+          <div class="impact-note"><span>↖</span><p><b>コードの影響範囲</b><span id="impact-text"></span></p></div>
+        </div>
+      </section>
+
+      <section class="explanation-grid">
+        <article class="explanation">
+          <p class="section-label">SYNTAX / 構文</p>
+          <h2>このコードの読み方</h2>
+          <div id="syntax-explanation"></div>
+        </article>
+        <article class="terms">
+          <p class="section-label">WORDS / 用語</p>
+          <h2>この講座の重要語</h2>
+          <dl id="term-list"></dl>
+        </article>
+      </section>
+
+      <section class="notes">
+        <div><span>POINT</span><p id="point-text"></p></div>
+        <div><span>CAUTION</span><p id="caution-text"></p></div>
+      </section>
+
+      <section class="course-map">
+        <p class="section-label">COURSE MAP</p>
+        <h2>学習ロードマップ</h2>
+        <div id="course-map"></div>
+      </section>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="lessons-data.js"></script>
+  <script src="learn.js?v=4"></script>
+</body>
+</html>

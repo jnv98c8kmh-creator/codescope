@@ -1,0 +1,14 @@
+:root { --ink:#12141a; --paper:#f4f1e9; --blue:#4057f2; --line:rgba(18,20,26,.16); }
+* { box-sizing:border-box; }
+body { margin:0; color:var(--ink); background:var(--paper); font-family:"Noto Sans JP",system-ui,sans-serif; }
+a { color:inherit; text-decoration:none; }
+header, footer { display:flex; padding:24px 6vw; justify-content:space-between; color:white; background:var(--ink); font-size:12px; }
+header a:first-child { font-weight:800; }
+main { width:min(800px,88vw); margin:auto; padding:90px 0; }
+.eyebrow { color:var(--blue); font:500 10px monospace; letter-spacing:.13em; }
+h1 { margin:18px 0 25px; font-size:clamp(44px,7vw,76px); line-height:1.05; letter-spacing:-.06em; }
+.lead { color:#565961; font-size:16px; line-height:2; }
+section { padding:35px 0; border-top:1px solid var(--line); }
+h2 { font-size:22px; }
+section p { color:#555860; font-size:13px; line-height:2; }
+.notice { padding:18px; border-left:4px solid #ff7358; background:white; font-size:12px; line-height:1.8; }

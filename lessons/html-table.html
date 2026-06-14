@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>表形式のデータ｜HTML初心者向け解説</title>
+  <meta name="description" content="HTML初心者向けに「表形式のデータ」をサンプルコード、構文、重要語とともにわかりやすく解説します。">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="CodeScope">
+  <meta property="og:title" content="表形式のデータ｜HTML初心者向け解説">
+  <meta property="og:description" content="table、tr、th、tdで行と列の関係を持つデータを表します。">
+  
+  <link rel="stylesheet" href="../lesson-article.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "表形式のデータ - HTML入門",
+  "description": "table、tr、th、tdで行と列の関係を持つデータを表します。",
+  "provider": {
+    "@type": "Organization",
+    "name": "CodeScope"
+  },
+  "educationalLevel": "基礎",
+  "inLanguage": "ja"
+}
+  </script>
+</head>
+<body>
+  <header class="article-header">
+    <a class="brand" href="../index.html"><span>&lt;/&gt;</span> CodeScope</a>
+    <nav><a href="../learn.html?lesson=html-table">ライブ教材を開く</a><a href="../about.html">このサイトについて</a></nav>
+  </header>
+  <main>
+    <nav class="breadcrumb" aria-label="パンくず">
+      <a href="../index.html">ホーム</a><span>›</span>
+      <a href="../learn.html">HTML講座</a><span>›</span>
+      <span>表形式のデータ</span>
+    </nav>
+    <article>
+      <header class="article-intro">
+        <p class="eyebrow">LESSON 09 / HTML / 基礎</p>
+        <h1>表形式のデータ</h1>
+        <p class="lead">table、tr、th、tdで行と列の関係を持つデータを表します。</p>
+        <a class="try-button" href="../learn.html?lesson=html-table">コードを編集して試す <span>→</span></a>
+      </header>
+
+      <section>
+        <p class="section-label">SAMPLE CODE</p>
+        <h2>サンプルコード</h2>
+        <pre><code>&lt;table border=&quot;1&quot; cellpadding=&quot;10&quot;&gt;
+  &lt;caption&gt;学習時間&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;言語&lt;/th&gt;&lt;th&gt;時間&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;HTML&lt;/td&gt;&lt;td&gt;5時間&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;CSS&lt;/td&gt;&lt;td&gt;10時間&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+        <p class="impact">編集したコードが、このプレビュー領域の表示や動作へ反映されます。</p>
+      </section>
+
+      <section class="two-column">
+        <div>
+          <p class="section-label">SYNTAX</p>
+          <h2>構文の読み方</h2>
+          <div class="syntax-list"><div><code>&lt;要素&gt;</code><p>記号と単語の組み合わせには、それぞれ決まった役割があります。</p></div></div>
+        </div>
+        <div>
+          <p class="section-label">WORDS</p>
+          <h2>重要語</h2>
+          <dl class="term-list"><div><dt>th</dt><dd>見出しセル。</dd></div><div><dt>td</dt><dd>データセル。</dd></div><div><dt>caption</dt><dd>表の題名。</dd></div></dl>
+        </div>
+      </section>
+
+      <aside class="learning-notes">
+        <div><b>POINT</b><p>まずは完全に暗記せず、何を指定すると何が変化するかを結び付けましょう。</p></div>
+        <div><b>CAUTION</b><p>表はレイアウト目的ではなく、行と列に関係があるデータへ使います。</p></div>
+      </aside>
+
+      <div class="ad-slot" data-ad-status="inactive" aria-label="広告掲載エリア">
+        <span>広告</span>
+        <p>学習内容の区切りにのみ広告を掲載します</p>
+        <!-- AdSense審査通過後、この内側へ広告ユニットを設置します。 -->
+      </div>
+
+      <nav class="article-pagination" aria-label="前後の講座">
+        <a href="html-div-span.html"><small>PREVIOUS</small>← divとspanの使い分け</a>
+        <a href="html-form.html"><small>NEXT</small>フォームの基本 →</a>
+      </nav>
+    </article>
+  </main>
+  <footer>
+    <p>© CodeScope</p>
+    <nav><a href="../privacy.html">プライバシーポリシー</a><a href="../about.html">サイトについて</a></nav>
+  </footer>
+</body>
+</html>

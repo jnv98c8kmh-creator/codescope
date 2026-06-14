@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>モジュールとコード設計｜JavaScript初心者向け解説</title>
+  <meta name="description" content="JavaScript初心者向けに「モジュールとコード設計」をサンプルコード、構文、重要語とともにわかりやすく解説します。">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="CodeScope">
+  <meta property="og:title" content="モジュールとコード設計｜JavaScript初心者向け解説">
+  <meta property="og:description" content="exportとimportで機能をファイルへ分割し、責務を整理します。">
+  
+  <link rel="stylesheet" href="../lesson-article.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "モジュールとコード設計 - JavaScript入門",
+  "description": "exportとimportで機能をファイルへ分割し、責務を整理します。",
+  "provider": {
+    "@type": "Organization",
+    "name": "CodeScope"
+  },
+  "educationalLevel": "応用",
+  "inLanguage": "ja"
+}
+  </script>
+</head>
+<body>
+  <header class="article-header">
+    <a class="brand" href="../index.html"><span>&lt;/&gt;</span> CodeScope</a>
+    <nav><a href="../learn.html?lesson=js-modules">ライブ教材を開く</a><a href="../about.html">このサイトについて</a></nav>
+  </header>
+  <main>
+    <nav class="breadcrumb" aria-label="パンくず">
+      <a href="../index.html">ホーム</a><span>›</span>
+      <a href="../learn.html">JavaScript講座</a><span>›</span>
+      <span>モジュールとコード設計</span>
+    </nav>
+    <article>
+      <header class="article-intro">
+        <p class="eyebrow">LESSON 61 / JavaScript / 応用</p>
+        <h1>モジュールとコード設計</h1>
+        <p class="lead">exportとimportで機能をファイルへ分割し、責務を整理します。</p>
+        <a class="try-button" href="../learn.html?lesson=js-modules">コードを編集して試す <span>→</span></a>
+      </header>
+
+      <section>
+        <p class="section-label">SAMPLE CODE</p>
+        <h2>サンプルコード</h2>
+        <pre><code>// math.js
+export function add(a, b) {
+  return a + b;
+}
+
+// app.jsでは次のように読み込みます
+// import { add } from &quot;./math.js&quot;;
+document.querySelector(&quot;#output&quot;).textContent =
+  &quot;2 + 3 = &quot; + add(2, 3);</code></pre>
+        <p class="impact">編集したコードが、このプレビュー領域の表示や動作へ反映されます。</p>
+      </section>
+
+      <section class="two-column">
+        <div>
+          <p class="section-label">SYNTAX</p>
+          <h2>構文の読み方</h2>
+          <div class="syntax-list"><div><code>命令(引数)</code><p>記号と単語の組み合わせには、それぞれ決まった役割があります。</p></div></div>
+        </div>
+        <div>
+          <p class="section-label">WORDS</p>
+          <h2>重要語</h2>
+          <dl class="term-list"><div><dt>モジュール</dt><dd>独立した機能単位のJavaScriptファイル。</dd></div><div><dt>export</dt><dd>他ファイルへ公開する値を指定。</dd></div><div><dt>import</dt><dd>別モジュールが公開した値を読み込む構文。</dd></div></dl>
+        </div>
+      </section>
+
+      <aside class="learning-notes">
+        <div><b>POINT</b><p>大きなアプリでは、DOM操作、データ処理、通信など責務ごとに分割すると保守しやすくなります。</p></div>
+        <div><b>CAUTION</b><p>記号の閉じ忘れやスペルミスは、表示されない原因になります。</p></div>
+      </aside>
+
+      <div class="ad-slot" data-ad-status="inactive" aria-label="広告掲載エリア">
+        <span>広告</span>
+        <p>学習内容の区切りにのみ広告を掲載します</p>
+        <!-- AdSense審査通過後、この内側へ広告ユニットを設置します。 -->
+      </div>
+
+      <nav class="article-pagination" aria-label="前後の講座">
+        <a href="js-fetch.html"><small>PREVIOUS</small>← fetchとAPI</a>
+        <span></span>
+      </nav>
+    </article>
+  </main>
+  <footer>
+    <p>© CodeScope</p>
+    <nav><a href="../privacy.html">プライバシーポリシー</a><a href="../about.html">サイトについて</a></nav>
+  </footer>
+</body>
+</html>

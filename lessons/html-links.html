@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>リンクとURL｜HTML初心者向け解説</title>
+  <meta name="description" content="HTML初心者向けに「リンクとURL」をサンプルコード、構文、重要語とともにわかりやすく解説します。">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="CodeScope">
+  <meta property="og:title" content="リンクとURL｜HTML初心者向け解説">
+  <meta property="og:description" content="a要素とhref属性で、別ページやページ内の場所を結びます。">
+  
+  <link rel="stylesheet" href="../lesson-article.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "リンクとURL - HTML入門",
+  "description": "a要素とhref属性で、別ページやページ内の場所を結びます。",
+  "provider": {
+    "@type": "Organization",
+    "name": "CodeScope"
+  },
+  "educationalLevel": "入門",
+  "inLanguage": "ja"
+}
+  </script>
+</head>
+<body>
+  <header class="article-header">
+    <a class="brand" href="../index.html"><span>&lt;/&gt;</span> CodeScope</a>
+    <nav><a href="../learn.html?lesson=html-links">ライブ教材を開く</a><a href="../about.html">このサイトについて</a></nav>
+  </header>
+  <main>
+    <nav class="breadcrumb" aria-label="パンくず">
+      <a href="../index.html">ホーム</a><span>›</span>
+      <a href="../learn.html">HTML講座</a><span>›</span>
+      <span>リンクとURL</span>
+    </nav>
+    <article>
+      <header class="article-intro">
+        <p class="eyebrow">LESSON 04 / HTML / 入門</p>
+        <h1>リンクとURL</h1>
+        <p class="lead">a要素とhref属性で、別ページやページ内の場所を結びます。</p>
+        <a class="try-button" href="../learn.html?lesson=html-links">コードを編集して試す <span>→</span></a>
+      </header>
+
+      <section>
+        <p class="section-label">SAMPLE CODE</p>
+        <h2>サンプルコード</h2>
+        <pre><code>&lt;h2 id=&quot;top&quot;&gt;リンクの例&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/&quot;&gt;MDNを開く&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#note&quot;&gt;ページ内の説明へ&lt;/a&gt;&lt;/p&gt;
+&lt;div style=&quot;height:120px&quot;&gt;&lt;/div&gt;
+&lt;p id=&quot;note&quot;&gt;リンク先の場所です。 &lt;a href=&quot;#top&quot;&gt;上へ戻る&lt;/a&gt;&lt;/p&gt;</code></pre>
+        <p class="impact">編集したコードが、このプレビュー領域の表示や動作へ反映されます。</p>
+      </section>
+
+      <section class="two-column">
+        <div>
+          <p class="section-label">SYNTAX</p>
+          <h2>構文の読み方</h2>
+          <div class="syntax-list"><div><code>&lt;要素&gt;</code><p>記号と単語の組み合わせには、それぞれ決まった役割があります。</p></div></div>
+        </div>
+        <div>
+          <p class="section-label">WORDS</p>
+          <h2>重要語</h2>
+          <dl class="term-list"><div><dt>href</dt><dd>リンク先のURLを指定する属性。</dd></div><div><dt>URL</dt><dd>Web上の場所を表す住所。</dd></div><div><dt>フラグメント</dt><dd>#idで同じページ内の場所を示す部分。</dd></div></dl>
+        </div>
+      </section>
+
+      <aside class="learning-notes">
+        <div><b>POINT</b><p>まずは完全に暗記せず、何を指定すると何が変化するかを結び付けましょう。</p></div>
+        <div><b>CAUTION</b><p>新しいタブを開くtarget=&quot;_blank&quot;では、必要に応じてrel=&quot;noopener&quot;も指定します。</p></div>
+      </aside>
+
+      <div class="ad-slot" data-ad-status="inactive" aria-label="広告掲載エリア">
+        <span>広告</span>
+        <p>学習内容の区切りにのみ広告を掲載します</p>
+        <!-- AdSense審査通過後、この内側へ広告ユニットを設置します。 -->
+      </div>
+
+      <nav class="article-pagination" aria-label="前後の講座">
+        <a href="html-text.html"><small>PREVIOUS</small>← 強調・改行・引用</a>
+        <a href="html-images.html"><small>NEXT</small>画像と代替テキスト →</a>
+      </nav>
+    </article>
+  </main>
+  <footer>
+    <p>© CodeScope</p>
+    <nav><a href="../privacy.html">プライバシーポリシー</a><a href="../about.html">サイトについて</a></nav>
+  </footer>
+</body>
+</html>

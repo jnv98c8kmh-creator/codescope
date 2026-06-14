@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Promiseとasync/await｜JavaScript初心者向け解説</title>
+  <meta name="description" content="JavaScript初心者向けに「Promiseとasync/await」をサンプルコード、構文、重要語とともにわかりやすく解説します。">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="CodeScope">
+  <meta property="og:title" content="Promiseとasync/await｜JavaScript初心者向け解説">
+  <meta property="og:description" content="時間のかかる処理を待ちながら、読みやすい順序で記述します。">
+  
+  <link rel="stylesheet" href="../lesson-article.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Promiseとasync/await - JavaScript入門",
+  "description": "時間のかかる処理を待ちながら、読みやすい順序で記述します。",
+  "provider": {
+    "@type": "Organization",
+    "name": "CodeScope"
+  },
+  "educationalLevel": "応用",
+  "inLanguage": "ja"
+}
+  </script>
+</head>
+<body>
+  <header class="article-header">
+    <a class="brand" href="../index.html"><span>&lt;/&gt;</span> CodeScope</a>
+    <nav><a href="../learn.html?lesson=js-async">ライブ教材を開く</a><a href="../about.html">このサイトについて</a></nav>
+  </header>
+  <main>
+    <nav class="breadcrumb" aria-label="パンくず">
+      <a href="../index.html">ホーム</a><span>›</span>
+      <a href="../learn.html">JavaScript講座</a><span>›</span>
+      <span>Promiseとasync/await</span>
+    </nav>
+    <article>
+      <header class="article-intro">
+        <p class="eyebrow">LESSON 59 / JavaScript / 応用</p>
+        <h1>Promiseとasync/await</h1>
+        <p class="lead">時間のかかる処理を待ちながら、読みやすい順序で記述します。</p>
+        <a class="try-button" href="../learn.html?lesson=js-async">コードを編集して試す <span>→</span></a>
+      </header>
+
+      <section>
+        <p class="section-label">SAMPLE CODE</p>
+        <h2>サンプルコード</h2>
+        <pre><code>const wait = (ms) =&gt;
+  new Promise((resolve) =&gt; setTimeout(resolve, ms));
+
+async function start() {
+  const output = document.querySelector(&quot;#output&quot;);
+  output.textContent = &quot;読み込み中...&quot;;
+  await wait(1000);
+  output.textContent = &quot;完了しました！&quot;;
+}
+
+start();</code></pre>
+        <p class="impact">編集したコードが、このプレビュー領域の表示や動作へ反映されます。</p>
+      </section>
+
+      <section class="two-column">
+        <div>
+          <p class="section-label">SYNTAX</p>
+          <h2>構文の読み方</h2>
+          <div class="syntax-list"><div><code>命令(引数)</code><p>記号と単語の組み合わせには、それぞれ決まった役割があります。</p></div></div>
+        </div>
+        <div>
+          <p class="section-label">WORDS</p>
+          <h2>重要語</h2>
+          <dl class="term-list"><div><dt>Promise</dt><dd>将来完了する処理を表すオブジェクト。</dd></div><div><dt>async</dt><dd>関数を非同期関数として定義。</dd></div><div><dt>await</dt><dd>Promiseの完了を待って次へ進む演算子。</dd></div></dl>
+        </div>
+      </section>
+
+      <aside class="learning-notes">
+        <div><b>POINT</b><p>まずは完全に暗記せず、何を指定すると何が変化するかを結び付けましょう。</p></div>
+        <div><b>CAUTION</b><p>記号の閉じ忘れやスペルミスは、表示されない原因になります。</p></div>
+      </aside>
+
+      <div class="ad-slot" data-ad-status="inactive" aria-label="広告掲載エリア">
+        <span>広告</span>
+        <p>学習内容の区切りにのみ広告を掲載します</p>
+        <!-- AdSense審査通過後、この内側へ広告ユニットを設置します。 -->
+      </div>
+
+      <nav class="article-pagination" aria-label="前後の講座">
+        <a href="js-storage.html"><small>PREVIOUS</small>← localStorage</a>
+        <a href="js-fetch.html"><small>NEXT</small>fetchとAPI →</a>
+      </nav>
+    </article>
+  </main>
+  <footer>
+    <p>© CodeScope</p>
+    <nav><a href="../privacy.html">プライバシーポリシー</a><a href="../about.html">サイトについて</a></nav>
+  </footer>
+</body>
+</html>

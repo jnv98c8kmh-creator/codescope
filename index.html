@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HTML・CSS・JavaScript初心者向けの無料学習サイト。61講座をコード編集とライブプレビューで基礎から学べます。">
+  <title>HTML・CSS・JavaScript入門｜初心者向け無料学習サイト CodeScope</title>
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CodeScope">
+  <meta property="og:title" content="HTML・CSS・JavaScript入門｜初心者向け無料学習サイト">
+  <meta property="og:description" content="61講座をコード編集とライブプレビューで基礎から学べます。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="index.html"><span>&lt;/&gt;</span> CodeScope</a>
+    <nav>
+      <a href="#curriculum">カリキュラム</a>
+      <a href="lessons/index.html">全講座</a>
+      <a href="#features">学び方</a>
+      <a class="nav-cta" href="learn.html">学習ページへ</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">VISUAL WEB DEVELOPMENT COURSE</p>
+        <h1>コードの意味が、<br><em>目でわかる。</em></h1>
+        <p class="lead">HTML・CSS・JavaScriptを基礎から実践まで。コードを編集すると、隣の画面がその場で変わります。</p>
+        <div class="actions">
+          <a class="primary" href="learn.html">61講座をはじめる <span>→</span></a>
+          <a class="secondary" href="#curriculum">内容を見る</a>
+        </div>
+        <dl class="stats">
+          <div><dt>61</dt><dd>LESSONS</dd></div>
+          <div><dt>3</dt><dd>LANGUAGES</dd></div>
+          <div><dt>100%</dt><dd>INTERACTIVE</dd></div>
+        </dl>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="grid"></div>
+        <div class="sphere"><small>FROM ZERO TO</small><strong>BUILD<br>THE WEB</strong></div>
+        <div class="snippet html"><b>HTML</b><code>&lt;main&gt;<br>&nbsp;Your idea<br>&lt;/main&gt;</code></div>
+        <div class="snippet css"><b>CSS</b><code>.idea {<br>&nbsp;color: future;<br>}</code></div>
+        <div class="snippet js"><b>JS</b><code>idea.addEventListener(<br>&nbsp;"click", create<br>);</code></div>
+      </div>
+    </section>
+
+    <section class="curriculum" id="curriculum">
+      <header class="section-head">
+        <p class="eyebrow">FULL CURRICULUM</p>
+        <h2>3つの言語を、<br>ひとつの流れで。</h2>
+      </header>
+      <div class="course-grid">
+        <article class="course html-course">
+          <span>01 / STRUCTURE</span>
+          <div class="course-icon">&lt;/&gt;</div>
+          <h3>HTML</h3>
+          <p>文書構造、セマンティクス、フォーム、画像、表、アクセシビリティ、SEOまで。</p>
+          <strong>20 LESSONS</strong>
+        </article>
+        <article class="course css-course">
+          <span>02 / PRESENTATION</span>
+          <div class="course-icon"># { }</div>
+          <h3>CSS</h3>
+          <p>基本構文、ボックスモデル、Flexbox、Grid、レスポンシブ、アニメーションまで。</p>
+          <strong>20 LESSONS</strong>
+        </article>
+        <article class="course js-course">
+          <span>03 / BEHAVIOR</span>
+          <div class="course-icon">( ) =&gt;</div>
+          <h3>JavaScript</h3>
+          <p>変数、関数、配列、DOM、イベント、非同期処理、Web API、モジュールまで。</p>
+          <strong>21 LESSONS</strong>
+        </article>
+      </div>
+    </section>
+
+    <aside class="landing-ad" data-ad-status="inactive" aria-label="広告掲載エリア">
+      <span>広告</span>
+      <p>カリキュラムと学習機能の間にのみ広告を掲載します</p>
+      <!-- AdSense審査通過後、この内側へ広告ユニットを設置します。 -->
+    </aside>
+
+    <section class="features" id="features">
+      <div>
+        <p class="eyebrow">HOW IT WORKS</p>
+        <h2>読むだけで終わらない。</h2>
+      </div>
+      <ol>
+        <li><b>01</b><span><strong>コードを読む</strong>構文を色分けし、重要な行を解説。</span></li>
+        <li><b>02</b><span><strong>画面で確かめる</strong>コードがどこへ影響するか即時表示。</span></li>
+        <li><b>03</b><span><strong>自分で変える</strong>数値や文字を編集して結果を比較。</span></li>
+        <li><b>04</b><span><strong>進捗を残す</strong>完了した講座をブラウザへ保存。</span></li>
+      </ol>
+    </section>
+
+    <section class="final-cta">
+      <p>READY TO CREATE?</p>
+      <h2>ブラウザを、<br>あなたのキャンバスに。</h2>
+      <a href="learn.html">学習ページを開く <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="index.html"><span>&lt;/&gt;</span> CodeScope</a>
+    <p>READ. TOUCH. CHANGE. BUILD.</p>
+    <nav><a href="about.html">サイトについて</a><a href="privacy.html">プライバシー</a></nav>
+  </footer>
+</body>
+</html>

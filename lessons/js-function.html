@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>関数の定義と呼び出し｜JavaScript初心者向け解説</title>
+  <meta name="description" content="JavaScript初心者向けに「関数の定義と呼び出し」をサンプルコード、構文、重要語とともにわかりやすく解説します。">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="CodeScope">
+  <meta property="og:title" content="関数の定義と呼び出し｜JavaScript初心者向け解説">
+  <meta property="og:description" content="処理へ名前を付け、引数を受け取り、戻り値を返します。">
+  
+  <link rel="stylesheet" href="../lesson-article.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "関数の定義と呼び出し - JavaScript入門",
+  "description": "処理へ名前を付け、引数を受け取り、戻り値を返します。",
+  "provider": {
+    "@type": "Organization",
+    "name": "CodeScope"
+  },
+  "educationalLevel": "基礎",
+  "inLanguage": "ja"
+}
+  </script>
+</head>
+<body>
+  <header class="article-header">
+    <a class="brand" href="../index.html"><span>&lt;/&gt;</span> CodeScope</a>
+    <nav><a href="../learn.html?lesson=js-function">ライブ教材を開く</a><a href="../about.html">このサイトについて</a></nav>
+  </header>
+  <main>
+    <nav class="breadcrumb" aria-label="パンくず">
+      <a href="../index.html">ホーム</a><span>›</span>
+      <a href="../learn.html">JavaScript講座</a><span>›</span>
+      <span>関数の定義と呼び出し</span>
+    </nav>
+    <article>
+      <header class="article-intro">
+        <p class="eyebrow">LESSON 48 / JavaScript / 基礎</p>
+        <h1>関数の定義と呼び出し</h1>
+        <p class="lead">処理へ名前を付け、引数を受け取り、戻り値を返します。</p>
+        <a class="try-button" href="../learn.html?lesson=js-function">コードを編集して試す <span>→</span></a>
+      </header>
+
+      <section>
+        <p class="section-label">SAMPLE CODE</p>
+        <h2>サンプルコード</h2>
+        <pre><code>function calculateTotal(price, count) {
+  const total = price * count;
+  return total;
+}
+
+const answer = calculateTotal(850, 3);
+document.querySelector(&quot;#output&quot;).textContent =
+  &quot;合計 &quot; + answer + &quot;円&quot;;</code></pre>
+        <p class="impact">編集したコードが、このプレビュー領域の表示や動作へ反映されます。</p>
+      </section>
+
+      <section class="two-column">
+        <div>
+          <p class="section-label">SYNTAX</p>
+          <h2>構文の読み方</h2>
+          <div class="syntax-list"><div><code>命令(引数)</code><p>記号と単語の組み合わせには、それぞれ決まった役割があります。</p></div></div>
+        </div>
+        <div>
+          <p class="section-label">WORDS</p>
+          <h2>重要語</h2>
+          <dl class="term-list"><div><dt>関数</dt><dd>再利用できる処理のまとまり。</dd></div><div><dt>引数</dt><dd>関数へ渡す値。</dd></div><div><dt>戻り値</dt><dd>returnで関数の外へ返す値。</dd></div></dl>
+        </div>
+      </section>
+
+      <aside class="learning-notes">
+        <div><b>POINT</b><p>まずは完全に暗記せず、何を指定すると何が変化するかを結び付けましょう。</p></div>
+        <div><b>CAUTION</b><p>記号の閉じ忘れやスペルミスは、表示されない原因になります。</p></div>
+      </aside>
+
+      <div class="ad-slot" data-ad-status="inactive" aria-label="広告掲載エリア">
+        <span>広告</span>
+        <p>学習内容の区切りにのみ広告を掲載します</p>
+        <!-- AdSense審査通過後、この内側へ広告ユニットを設置します。 -->
+      </div>
+
+      <nav class="article-pagination" aria-label="前後の講座">
+        <a href="js-loop.html"><small>PREVIOUS</small>← forループ</a>
+        <a href="js-arrow.html"><small>NEXT</small>アロー関数 →</a>
+      </nav>
+    </article>
+  </main>
+  <footer>
+    <p>© CodeScope</p>
+    <nav><a href="../privacy.html">プライバシーポリシー</a><a href="../about.html">サイトについて</a></nav>
+  </footer>
+</body>
+</html>
