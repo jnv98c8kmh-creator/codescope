@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://codescope.jnv98c8kmh.workers.dev/sitemap.xml
